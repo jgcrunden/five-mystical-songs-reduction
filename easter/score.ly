@@ -1,0 +1,43 @@
+\include "oboe.ly"
+\include "flute.ly"
+\include "horn.ly"
+\include "trumpet.ly"
+
+easter = \score {
+	\header {
+		title = "Easter"
+		% Do not display the composer for each movement
+		composer = ##f
+	}
+	<<
+		\new StaffGroup = "woodwind" 
+		<<
+			\new Staff = "flute" {
+				\set Staff.instrumentName = "Flute"
+				\set Staff.shortInstrumentName = "Fl."
+				\flute
+			}
+			\new Staff = "oboe" {
+				\set Staff.instrumentName = "Oboe"
+				\set Staff.shortInstrumentName = "Ob."
+				\oboe
+			}
+		>>
+		\new StaffGroup = "brass" 
+		<<
+			\new Staff = "horn" {
+				\set Staff.instrumentName = "Horn"
+				\set Staff.shortInstrumentName = "Hn."
+				\horn
+			}
+			\new Staff = "trumpet" {
+				\set Staff.instrumentName = "Trumpet"
+				\set Staff.shortInstrumentName = "Tpt."
+				\trumpet
+			}
+		>>
+	>>
+
+	\layout {}
+	\midi {}
+}
