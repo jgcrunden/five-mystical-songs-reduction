@@ -1,12 +1,14 @@
+\version "2.25.35"
+
 \include "common.ly" 
 flute = \relative {
-	\key ees \major
-	\time 3/4
 	\override Hairpin.minimum-length = #8
 	\numericTimeSignature
 	\tempo "Maestoso" 4 = 52
+	\key ees \major
+	\time 3/4
 	R2. | r4 r ees''\p\<( | \after 4 \> g2\!~  \tuplet 3/2 {g8\p f ees} | f8 ees) r4 r |
-	\mark \default f'4(\f ees~ ees8) r | c\> bes bes2\! | R2.*4 | \after 4 \> bes2\f  aes8 g\! |
+	f'4(\f ees~ ees8) r | c\> bes bes2\! | R2.*4 | \mark \default \after 4 \> bes2\f  aes8 g\! |
 	aes bes g4. f8 | \after 4. \> ees2.~ | \time 4/4 ees8\! r8 r4 r2 | R1 |
 	\time 3/4
 	r4 c\p\<( d8 ees) | f2. | f4\f( ees\> d8\! c | bes4)\p r4 r |
@@ -40,8 +42,8 @@ flute = \relative {
 	\time 3/4
 	\tuplet 3/2 { g(\mf \cresc ees g } \tuplet 3/2 { ees g ees } \tuplet 3/2 { g ees g } |
 	\mark \default
-	\tuplet 3/2 { ees aes ees } \tuplet 3/2 { aes\< ees aes } \tuplet 3/2 { ees aes ees } | bes4~ \ff \> 8) r8\p 4
-	R2. | bes2\pp( aes8 g | bes2.~ | bes2) r4 | R2.*4 | \mark \default R2.*4 |
+	\tuplet 3/2 { ees aes ees } \tuplet 3/2 { aes\< ees aes } \tuplet 3/2 { ees aes ees } | bes'4~ \ff \> 8) r8\p 4
+	R2. | bes,2\pp( aes8 g | bes2.~ | bes2) r4 | R2.*4 | \mark \default R2.*4 |
 	r8 g'[\mp( aes bes\< c8. d16]\! | 
 	\tempo "Largamente"
 	ees8)\psub r r4 r
