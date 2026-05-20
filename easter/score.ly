@@ -10,6 +10,8 @@
 
 \include "timpani.ly"
 
+\include "baritone.ly"
+
 easter = \score {
 	\header {
 		title = "Easter"
@@ -59,6 +61,15 @@ easter = \score {
 				\set Staff.shortInstrumentName = "Timp."
 				\timpani
 			}
+		\new StaffGroup = "soloist" 
+			<<
+				\new Staff = "baritone" {
+					\set Staff.instrumentName = "Baritone"
+					\set Staff.shortInstrumentName = "Bar."
+					\baritoneMusic
+				}
+				\baritoneLyrics
+			>>
 	>>
 
 	\layout {}
