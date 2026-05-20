@@ -47,6 +47,7 @@ horn = \relative {
 	a8 r d,2(~ 8 e |
 	fis2 a8 c a e |
 	e4) r4 r2 |
+	\mark \default
 	\tempo "poco rit."
 	\time 3/4 
 	f2.^\markup { "con sord." }~\pp |
@@ -55,8 +56,13 @@ horn = \relative {
 	a2.(\pp |
 	g2 a8 g |
 	f4 g2) |
-	\tempo "poco allargando" \time 4/4 bes2( a) |
-	\tempo "Tempo alla prima" \time 3/4 d2.\mf\cresc |
+	\tempo "poco allargando"
+	\time
+	4/4 bes2( a) |
+	\tempo "Tempo alla prima"
+	\time 3/4
+	d2.\mf\cresc |
+	\mark \default
 	\after 4 \< bes |
 	bes(~\ff\> |
 	\tuplet 3/2 { bes8\pp a g } f2) |

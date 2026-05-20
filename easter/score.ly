@@ -8,6 +8,8 @@
 \include "horn.ly"
 \include "trumpet.ly"
 
+\include "timpani.ly"
+
 easter = \score {
 	\header {
 		title = "Easter"
@@ -51,6 +53,12 @@ easter = \score {
 				\trumpet
 			}
 		>>
+		\new StaffGroup = "percussion" 
+			\new Staff = "timpani" {
+				\set Staff.instrumentName = "Timpani"
+				\set Staff.shortInstrumentName = "Timp."
+				\timpani
+			}
 	>>
 
 	\layout {}
