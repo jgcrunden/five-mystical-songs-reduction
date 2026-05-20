@@ -34,6 +34,6 @@ oboe = \relative {
 	\tuplet 3/2 { aes c aes } \tuplet 3/2 { c\< aes c } \tuplet 3/2 { aes c aes } | ees'4~\ff \> 8\p) r8 r4 |
 	R2.*2 | g,2(\pp f4~ | f8) r8 r4 r4 | R2.*4 | \mark \default | R2.*2 | r4 r bes\p( | ees2 des4 | bes) r4 r |
 	\tempo "Largamente"
-	c(\pp d ees | \time 4/4 f8) r r4 r2 | r r4 g,8^\markup { \italic "dolce" }(\pp aes | \time 3/4 bes c des4. ees8 | bes2 g4\> | ees des\!~ des8 r8) |
+	c(\pp d ees | \time 4/4 f8) r r4 r2 | r r4 g,8^\markup { \italic "dolce" }(\pp aes | \time 3/4 bes c des4. ees8 | bes2 g4\> | \mark \default ees des\!~ des8 r8) |
 	R2. | \tempo "poco rall." R2.*4 | R2.\fermata \bar "|."
 }

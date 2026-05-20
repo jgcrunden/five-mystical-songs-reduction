@@ -3,6 +3,8 @@
 \include "oboe.ly"
 \include "flute.ly"
 \include "clarinet.ly"
+\include "basson.ly"
+
 \include "horn.ly"
 \include "trumpet.ly"
 
@@ -29,6 +31,11 @@ easter = \score {
 				\set Staff.instrumentName = "Clarinet"
 				\set Staff.shortInstrumentName = "Cl."
 				\clarinet
+			}
+			\new Staff = "basson" {
+				\set Staff.instrumentName = "Basson"
+				\set Staff.shortInstrumentName = "Bn."
+				\basson
 			}
 		>>
 		\new StaffGroup = "brass" 

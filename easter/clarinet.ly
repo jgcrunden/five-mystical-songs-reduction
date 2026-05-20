@@ -33,9 +33,9 @@ clarinet = \relative {
 	\time 3/4
 	\tuplet 3/2 { a(\mf \cresc d a } \tuplet 3/2 { d a d } \tuplet 3/2 { a d a } | \mark \default \tuplet 3/2 { d bes d } \tuplet 3/2 {bes\< d bes } \tuplet 3/2 { d bes d) } | 
 	r4 \after 4 \p a2(\ff \>~ | \tuplet 3/2 { a8 g f } g4. f8) | a2(\pp g8 f e2.~ | 8) r8 r4 c'8( d | d2. | \tuplet 3/2 { bes8 a bes } g4 f~ | 8) r8 r4 r4 |
-	r4 r4 g,(\p \mark \default a8 bes d f a g | g4 f~ 8) r8 | R2. | \tuplet 3/2 { aes,8(\p\< c f } \tuplet 3/2 { aes c f } \tuplet 3/2 { ees\> bes g } | f) r8 r4 r |
+	r4 r4 g,(\p \mark \default a8 bes d f a g | g4 f~ 8) r8 | R2. | \tuplet 3/2 { aes,8(\p\< c f } \tuplet 3/2 { aes c f } \tuplet 3/2 { ees\> bes g } | f\!) r8 r4 r |
 	\tempo "Largamente"
-	g'2(\pp f4 | \time 4/4 d8 e d2 c4~ | 8 bes a2~ 8) r8 | \time 3/4 r4 bes,16(\pp ees g bes \tuplet 3/2 { ees8 bes g } | f) r8 r4 a8( bes | c8 d ees4. f8 | c) r8 r4 r4 |
+	g'2(\pp f4 | \time 4/4 d8 e d2 c4~ | 8 bes a2~ 8) r8 | \time 3/4 r4 bes,16(\pp ees g bes \tuplet 3/2 { ees8 bes g } | f) r8 r4 a8( bes | \mark \default c8 d ees4. f8 | c) r8 r4 r4 |
 	\tempo "poco rall." R2.*4 | R2.\fermata \bar "|."
 	
 }
