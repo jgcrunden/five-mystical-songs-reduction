@@ -42,7 +42,7 @@ flute = \relative {
 	\time 3/4
 	\tuplet 3/2 { g(\mf \cresc ees g } \tuplet 3/2 { ees g ees } \tuplet 3/2 { g ees g } |
 	\mark \default
-	\tuplet 3/2 { ees aes ees } \tuplet 3/2 { aes\< ees aes } \tuplet 3/2 { ees aes ees } | bes'4~ \ff \> 8) r8\p 4
+	\tuplet 3/2 { ees aes ees } \tuplet 3/2 { aes\< ees aes } \tuplet 3/2 { ees aes ees } | bes'4~ \ff \> 8) r8\p r4
 	R2. | bes,2\pp( aes8 g | bes2.~ | bes2) r4 | R2.*4 | \mark \default R2.*4 |
 	r8 g'[\mp( aes bes\< c8. d16]\! | 
 	\tempo "Largamente"
