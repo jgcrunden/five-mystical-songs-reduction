@@ -6,6 +6,7 @@
 \book {
 	\paper {
     print-all-headers = ##t
+		system-separator-markup = \slashSeparator
   }
 	\header {
 		title = "FIVE MYSTICAL SONGS"

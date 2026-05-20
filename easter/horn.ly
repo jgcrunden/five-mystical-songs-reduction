@@ -61,5 +61,26 @@ horn = \relative {
 	bes(~\ff\> |
 	\tuplet 3/2 { bes8\pp a g } f2) |
 	R2.*3 |
-	r4 bes\pp a
+	r4 bes(\pp a |
+	aes4. g8 f4 |
+	g4~ 8) r r4 |
+	R2. |
+	\mark \default
+	R2.*5 |
+	\tempo "Largamente"
+	g4(\pp a bes |
+	\time 4/4
+	c8 d c4 bes a8 g |
+	f8) r r4 r2 |
+	\time 3/4
+	R2.*2 |
+	\mark \default
+	R2. |
+	f8(\pp g aes4. bes8 |
+	\tempo "poco rall."
+	f4) r4 r |
+	R2. |
+	r4 r4 f4~(^\markup { "con sord." } _\markup { \italic "molto legato" }\pp |
+	8 g\> aes4 ees |
+	f2.)\fermata\ppp \bar "|."
 }
