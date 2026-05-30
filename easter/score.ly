@@ -11,6 +11,7 @@
 \include "timpani.ly"
 
 \include "baritone.ly"
+\include "sopranos.ly"
 
 easter = \score {
 	\header {
@@ -62,14 +63,23 @@ easter = \score {
 				\timpani
 			}
 		\new StaffGroup = "soloist" 
-			<<
-				\new Staff = "baritone" {
-					\set Staff.instrumentName = "Baritone"
-					\set Staff.shortInstrumentName = "Bar."
-					\baritoneMusic
-				}
-				\baritoneLyrics
-			>>
+		<<
+			\new Staff = "baritone" {
+				\set Staff.instrumentName = "Baritone"
+				\set Staff.shortInstrumentName = "Bar."
+				\baritoneMusic
+			}
+			\baritoneLyrics
+		>>
+		\new StaffGroup = "chorus"
+		<<
+			\new Staff = "sopranos" {
+				\set Staff.instrumentName = "Sopranos"
+				\set Staff.shortInstrumentName = "S."
+				\sopranosMusic
+			}
+			\sopranosLyrics
+		>>
 	>>
 
 	\layout {}
