@@ -55,17 +55,54 @@ baritoneMusic = \new Voice = "baritone" {
 		b4. 8 d\> e d b |
 		4.\)\! 8\( c4\< d\! |
 		4~ 8\) r8 r4 r |
-		r8 g\( 2 8 a |
+		r8 g,\( 2 8 a |
 		b4 8 8 d( f d) a |
-		a2.\)
+		a2.\) r4
 		\mark \default
 		\tempo "poco rit."
 		\time 3/4
-		r8 g\(\pp d4. g8 |
+		r8 g\(\pp d'4. g,8 |
 		g2\) r8 g\( |
 		bes g f4 g |
-		bes8 g c4\) g\( |
-		d2~ 8 d % page 13 bar 2
+		bes8 g f4\) g\( |
+		d'2~ 8 d |
+		c2~ 8\) 8\( |
+		d8. c16 4 g |
+		\tempo "poco allargando"
+		\time 4/4
+		aes2\< bes\! |
+		\tempo "Tempo alla prima"
+		\key ees \major
+		\time 3/4 
+		c~\< 8\!\) r |
+		\mark \default
+		R2. |
+		r4 r8 ees\(\ff 4~ |
+		\tuplet 3/2 { 8 d[( c)] } d4. ees8 |
+		c4.\) g8\( aes bes |
+		g2 f4 |
+		bes4.\>\) bes8\(\mf bes c |
+		c2.\) |
+		\tuplet 3/2 { c8\([( bes c] } des4) ees8 bes |
+		c4~ 8\) r8 r4 |
+		R2.
+		\mark \default
+		r4 g\( 8 f |
+		bes4 4\) ees,8\( 8 |
+		c'4 bes2 |
+		ees des4 |
+		bes8. 16 4~ 8\) r8 |
+		\tempo "Largamente"
+		ees4\(\f d~ \tuplet 3/2 { 8 c[( bes)] } |
+		\time 4/4
+		c d c2 bes4 |
+		g8 f bes2\) ees,4\(
+		\time 3/4
+		bes'8 c des4. ees8 |
+		\after 4 \dim bes2\) ees,4\(\! |
+		\mark \default
+		g \after 4 \> f2 |
+		ees~\p 8\) r8 |
 	}
 }
 
@@ -79,5 +116,12 @@ baritoneLyrics = \new Lyrics \lyricsto "baritone" {
 	Rise, | heart; thy | Lord is ri -- sen.
 	A -- wake, my | lute, and strug -- gle for thy | part With all thy art.
 	The cross taught all | wood to re -- sound His | Name
-
+	Who bore the | same. His | stretch -- ed sin -- ews
+	taught all strings, what | key is | best to | ce -- le -- brate this
+	most high | day. 
+	Con -- sort both heart and | lute, Con -- sort both | heart and | lute,
+	and twist a | song | Plea -- sant and | long:
+	Or since all | mu -- sic is but | three parts
+	vied, And | mul -- ti -- plied; | O let thy | bless -- ed Spi -- rit
+	bear a part, And | make up our de -- | fects with | His sweet | art.
 }
