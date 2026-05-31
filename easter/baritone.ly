@@ -63,6 +63,7 @@ baritoneMusic = \new Voice = "baritone" {
 		\time 3/4
 		r8 g\(\pp d'4. g,8 |
 		g2\) r8 g\( |
+		\tempo "a tempo"
 		bes g f4 g |
 		bes8 g f4\) g\( |
 		d'2~ 8 d |
@@ -103,6 +104,8 @@ baritoneMusic = \new Voice = "baritone" {
 		\mark \default
 		g \after 4 \> f2 |
 		ees~\p 8\) r8 |
+		R2.*4 |
+		R2.\fermata \bar "|."
 	}
 }
 
