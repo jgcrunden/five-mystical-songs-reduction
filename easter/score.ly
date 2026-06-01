@@ -16,6 +16,9 @@
 \include "tenors.ly"
 \include "basses.ly"
 
+\include "violin1.ly"
+\include "violin2.ly"
+
 easter = \score {
 	\header {
 		title = "Easter"
@@ -100,6 +103,22 @@ easter = \score {
 				\bassesMusic
 			}
 			\bassesLyrics
+		>>
+		\new StaffGroup = "strings" \with {
+			\consists "Metronome_mark_engraver"
+      \consists "Staff_collecting_engraver"
+		}
+		<<
+			\new Staff = "violin1" {
+				\set Staff.instrumentName = "Violin I"
+				\set Staff.shortInstrumentName = "Vln I"
+				\violinOne
+			}
+			\new Staff = "violin2" {
+				\set Staff.instrumentName = "Violin II"
+				\set Staff.shortInstrumentName = "Vln II"
+				\violinTwo
+			}
 		>>
 	>>
 
