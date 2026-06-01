@@ -69,6 +69,7 @@ altosMusic = \new Voice = "altos" {
 		\time 3/4
 		4 des4-\piup 4 |
 		\after 4 \dim es2 4\ppp |
+		\mark \default
 		g \after 4 \> f2 |
 		ees2~\! 8 r8 |
 		\tempo "poco rall."

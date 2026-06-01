@@ -14,6 +14,7 @@
 \include "sopranos.ly"
 \include "altos.ly"
 \include "tenors.ly"
+\include "basses.ly"
 
 easter = \score {
 	\header {
@@ -93,6 +94,12 @@ easter = \score {
 				\tenorsMusic
 			}
 			\tenorsLyrics
+			\new Staff = "basses" {
+				\set Staff.instrumentName = "Basses"
+				\set Staff.shortInstrumentName = "B."
+				\bassesMusic
+			}
+			\bassesLyrics
 		>>
 	>>
 

@@ -69,6 +69,7 @@ sopranosMusic = \new Voice = "sopranos" {
 		\time 3/4
 		4 bes'4-\piup 4 |
 		\after 4 \dim 2 ees,4\ppp |
+		\mark \default
 		g \after 4 \> f2 |
 		ees2~\! 8 r8 |
 		\tempo "poco rall."

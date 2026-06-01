@@ -52,25 +52,26 @@ tenorsMusic = \new Voice = "tenors" {
 		\tempo "Tempo alla prima" % edited up to here
 		\key ees \major
 		\time 3/4
-		r4 r8 ees,\mf\cresc 4~ |
+		r4 r8 c\mf\cresc 4~ |
 		\mark \default
-		ees4. <ees aes>8 8 8 |
-		<ees c'>4~\f 8 r8 r4 |
+		c4. c8 8 8 |
+		<c ees>4~\f 8 r8 r4 |
 		R2. |
 		r4 r8 g\p aes bes |
-		g2 f4  |
-		bes4~ 8 r8 r4 |
+		2 4  |
+		4~ 8 r8 r4 |
 		R2.*4 |
 		\mark \default
 		R2.*5 |
 		\tempo "Largamente"
-		f4\pp 4 g |
+		c4\pp d ees |
 		\time 4/4
-		f8 g f4\( ees d8[ c] |
-		bes8[ aes]\) bes2.~ |
+		d8 ees d4\( c bes8[ aes] |
+		g8[ aes]\) g2.~ |
 		\time 3/4
-		4 des4-\piup 4 |
-		\after 4 \dim es2 4\ppp |
+		4 f4-\piup 4 |
+		\after 4 \dim g2 ees4\ppp |
+		\mark \default
 		g \after 4 \> f2 |
 		ees2~\! 8 r8 |
 		\tempo "poco rall."
