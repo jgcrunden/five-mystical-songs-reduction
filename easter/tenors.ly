@@ -16,22 +16,23 @@ tenorsMusic = \new Voice = "tenors" {
 		f'(\f \after 4 \> ees4.) g,8 |
 		aes\! bes g4\> f\! |
 		R2.*4 |
-		\mark \default % edited up to here
-		r4 <g bes>\f <f aes>8[( g)] |
-		<f aes>8 <ees bes> g4. f8 |
-		ees2 r4 |
+		\mark \default
+		r4 ees'4.\f 8 |
+		d c bes4. 8 |
+		ees,2 r4 |
 		\time 4/4
 		R1*2
 		\time 3/4
 		R2.*5
 		\mark \default 
-		R2.*7
-		r4 r bes'\f |
-		ees2~\< 8\! r8 |
+		R2.*6
+		r4 f'4\mf\cresc 4~ |
+		4.\f ees8 f g |
+		f2~\< 8\! r8 |
 		r4 ees2\f\< |
 		\mark \default
-		ees~\ff \tuplet 3/2 { 8 d[( c]) } |
-		d ees <bes d>4\> <bes c>\p
+		g~\ff \tuplet 3/2 { 8 f[( ees]) } |
+		<bes f'> <bes g'> <bes f'>4\> <bes ees>\p
 		R2.*8 |
 		\mark \default
 		R2.*3 |
@@ -48,7 +49,7 @@ tenorsMusic = \new Voice = "tenors" {
 		\tempo "poco allargando"
 		\time 4/4
 		R1 |
-		\tempo "Tempo alla prima"
+		\tempo "Tempo alla prima" % edited up to here
 		\key ees \major
 		\time 3/4
 		r4 r8 ees,\mf\cresc 4~ |
@@ -81,7 +82,7 @@ tenorsMusic = \new Voice = "tenors" {
 tenorsLyrics = \new Lyrics \lyricsto "tenors" {
 	Rise, | heart; thy | Lord is ri -- sen
 	Sing His praise with -- out de -- lays,
-	Rise, | heart; Rise, heart; thy | Lord is ri -- sen.
+	Rise, thy Lord is ri -- sen. Rise, | heart; thy | Lord is ris -- sen.
 	Con -- sort both heart and | lute,
 	Con -- sort both | heart and | lute,
 	O let thy | bless -- ed Spi -- _ _ _ rit bear a part, with His sweet art.
