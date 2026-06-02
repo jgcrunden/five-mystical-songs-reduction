@@ -1,5 +1,7 @@
 \version "2.25.35"
 
+\include "common.ly"
+
 violinOne = \relative {
 	\override Hairpin.minimum-length = #8
 	\numericTimeSignature
@@ -76,12 +78,74 @@ violinOne = \relative {
 	r4^\markup {"arco"} <dis b'>^\markup { "div."}(\pp <fis d'>8 <g e'> <fis d'> <dis b'>) |
 	\after 4 \< \after 2 \! q2( <e c'>4 <fis d'>) |
 	<g d'>4~ 8 r8 r2 |
-	R1
-
-
-
-
-
-
-
+	g4^\markup { "pizz." } b c r4 |
+	r4^\markup { "arco"} \ottava #1 <d d'>^\markup{ "div."}(\pp <g g'>8 <a a'> <g g'> <e e'>) |
+	\after 4. \> <e, e'>2( \after 8 \! <fis fis'>4 <g g'>) |
+	\mark \default
+	\tempo "poco rit."
+	\time 3/4
+	<g g'>2.~\ppppsub |
+	q8 \ottava #0 r8 r4 r8 g( |
+	\tempo "a tempo"
+	f g f4 g |
+	f8 g f4 g) |
+	d2 bes4 |
+	r8 e,16( g c e g c bes8 g |
+	f4) g2 |
+	\time 4/4
+	\tempo "poco allargando"
+	aes(\pp\cresc bes) |
+	\tempo "Tempo alla prima"
+	\key ees \major
+	\time 3/4
+	r8 c(\mf\cresc ees c bes c\!) |
+	\mark \default
+	r8 c(\< ees c ees\! g) |
+	bes\ff r8 \tuplet 3/2 { c,,\p 8 8 } \tuplet 3/2 { g4.:8\> } |
+	\tuplet 3/2 { <aes c>4.:8^\markup { "div." } }\pp \tuplet 3/2 { <bes d>:8 } \tuplet 3/2 { <bes d>8 q <bes ees> } |
+	\tuplet 3/2 { <g bes>4.:8 } \tuplet 3/2 { <g bes>8-- <bes ees>-- <g g'>-- } <aes aes'>( <bes bes'>) |
+	\after 4 \> \after 2 \! <g g'>2( <f f'>4~ | 
+	\tuplet 3/2 { q8)^\markup { "unis." }\pp f f } \tuplet 3/2 { 4.:8 } \tuplet 3/2 { g:8 } |
+	\tuplet 3/2 { aes:8 } \tuplet 3/2 { aes:8 } \tuplet 3/2 { c:8 } |
+	\tuplet 3/2 { c8( bes c } des4 ees8 bes) |
+	\tuplet 3/2 { bes( aes bes } c4. g8) |
+	\after 4 \< aes4.( g8\noBeam aes\! bes |
+	\mark \default
+	\after 4 \> g2~ 8\pp f) |
+	r8 d( ees g\> bes ees) |
+	c4(\! bes2~ |
+	2 aes4 |
+	g8\noBeam) g'[(\mp\< aes) bes c8.( d16]) |
+	\tempo "Largamente"
+	ees4(\ppsub d~ \tuplet 3/2 { 8 c bes)} |
+	\time 4/4
+	c( d c4 \tuplet 3/2 { bes8 aes g } aes g) |
+	\tuplet 3/2 { f( g ees } ees2) g,8(^\markup { \italic "dolce" }\pp aes |
+	\time 3/4
+	bes c des4. ees8) |
+	bes2 g8( aes |
+	\mark \default
+	bes c) des4.( ees8) |
+	bes( c des4. ees8) |
+	\tempo "poco rall."
+	<<
+		{
+			\voiceOne
+			bes4.^\markup { "div."}(\pp\dim c8) cis4(~ |
+			8 dis) e4.( fis8) |
+			g4.(\ppp\dim a8) bes4(~ |
+			8 c des2) |
+			ees2.\fermata\pppp
+			\bar "|."
+		}
+		\new Voice {
+			\voiceTwo
+			bes,,4.( c8) cis4(~ |
+			8 dis) e4.( fis8) |
+			<g ees'>2 bes4(~ |
+			4 bes' aes) |
+			g2.
+			\bar "|."
+		}
+	>>
 }
