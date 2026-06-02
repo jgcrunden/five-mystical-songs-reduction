@@ -53,7 +53,7 @@ violinOne = \relative {
 	bes c des4. ees8) |
 	bes(c des4. es8) |
 	\mark \default
-	bes4.^\markup { \italic "molto sostenuto"}(\p\dim c8 cis4~ | 
+	bes4.^\markup { \italic "molto sostenuto"}(\p\dim c8 cis4~ |
 	8 dis e4. fis8) |
 	<<
 		{
@@ -62,13 +62,26 @@ violinOne = \relative {
 			\tempo "Poco animato"
 			\key e \minor
 			\time 4/4
-			8 r8 r4 r2 |
+			8 
 		}
 		\new Voice {
 			\voiceTwo
 			<b, g'>2.~ |
-			8 s8 s4 s2 |
+			8 
 		}
 	>>
 	\oneVoice
+	r8 b4^\markup { "pizz."} c r4 |
+	fis, b c r4 |
+	r4^\markup {"arco"} <dis b'>^\markup { "div."}(\pp <fis d'>8 <g e'> <fis d'> <dis b'>) |
+	\after 4 \< \after 2 \! q2( <e c'>4 <fis d'>) |
+	<g d'>4~ 8 r8 r2 |
+	R1
+
+
+
+
+
+
+
 }
