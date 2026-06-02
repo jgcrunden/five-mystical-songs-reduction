@@ -31,4 +31,44 @@ violinOne = \relative {
 	g'4(\pp a bes |
 	\mark \default
 	a8[ e\> cis a] g)\! r8 |
+	r4 r4 \tuplet 3/2 { b,8--(\pp cis-- d--) } |
+	cis4.( fis8\noBeam) 8[( e)] |
+	a4.( b8\noBeam) 8[( a)] |
+	d2.( |
+	c) |
+	\ottava #1
+	f8.(\p\cresc f'16) f8( ees f g) |
+	f4.( ees8\noBeam) f( g) |
+	f([\f ees f g]) f( ees |
+	f[ g])\< f( ees) f( g) |
+	\mark \default
+	bes2~\ff \tuplet 3/2 { 8 aes( g) } |
+	aes-- g-- f4(\> ees) |
+	d(\pp c4. ) \ottava #0 g8( |
+	aes bes) g4.(\> g,8 |
+	g2.~)\! |
+	8 r8 r4 r4 |
+	R2. |
+	r4 r4 g8(\p^\markup { \italic "dolce" } aes |
+	bes c des4. ees8) |
+	bes(c des4. es8) |
+	\mark \default
+	bes4.^\markup { \italic "molto sostenuto"}(\p\dim c8 cis4~ | 
+	8 dis e4. fis8) |
+	<<
+		{
+			\voiceOne
+			\after 4 \> g2 b4~\ppp |
+			\tempo "Poco animato"
+			\key e \minor
+			\time 4/4
+			8 r8 r4 r2 |
+		}
+		\new Voice {
+			\voiceTwo
+			<b, g'>2.~ |
+			8 s8 s4 s2 |
+		}
+	>>
+	\oneVoice
 }
