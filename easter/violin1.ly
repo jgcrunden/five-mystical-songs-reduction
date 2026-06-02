@@ -8,7 +8,7 @@ violinOne = \relative {
 	\tempo "Maestoso" 4 = 52
 	\key ees \major
 	\time 3/4
-	r4 r4 \tuplet 3/2 { c''8-.(\p 8-. 8-.) } |
+	r4 r4 \tuplet 3/2 { c''8(\p-- 8-- 8)-- } |
 	\tuplet 3/2 { 4.:8\< } \tuplet 3/2 { <bes ees>:8^\markup { "div." } } \tuplet 3/2 { q:8 } |
 	<bes bes'>2\!\( <aes aes'>4~ |
 	q8 <g g'>~ \tuplet 3/2 { <g g'>\) q q } \tuplet 3/2 { q4.:8\< } |
