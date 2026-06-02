@@ -9,7 +9,7 @@ baritoneMusic = \new Voice = "baritone" {
 		\key ees \major
 		\time 3/4
 		R2. |
-		r4 \after 4 \< bes'2\(^\markup { "largamente" } \f |
+		r4 \after 4 \< bes'2\(^\markup { "Largamente" } \f |
 		ees~\! \tuplet 3/2 { ees8 d( c) } |
 		d ees c4 bes\) |
 		R2.*2 |

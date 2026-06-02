@@ -51,7 +51,7 @@ violinOne = \relative {
 	g2.~)\! |
 	8 r8 r4 r4 |
 	R2. |
-	r4 r4 g8(\p^\markup { \italic "dolce" } aes |
+	r4 r4 g8(\p_\markup { \italic "dolce" } aes |
 	bes c des4. ees8) |
 	bes(c des4. es8) |
 	\mark \default
@@ -73,19 +73,19 @@ violinOne = \relative {
 		}
 	>>
 	\oneVoice
-	r8 b4^\markup { "pizz."} c r4 |
+	r8 b4^\markup { "pizz."} c\p r4 |
 	fis, b c r4 |
 	r4^\markup {"arco"} <dis b'>^\markup { "div."}(\pp <fis d'>8 <g e'> <fis d'> <dis b'>) |
 	\after 4 \< \after 2 \! q2( <e c'>4 <fis d'>) |
 	<g d'>4~ 8 r8 r2 |
-	g4^\markup { "pizz." } b c r4 |
-	r4^\markup { "arco"} \ottava #1 <d d'>^\markup{ "div."}(\pp <g g'>8 <a a'> <g g'> <e e'>) |
-	\after 4. \> <e, e'>2( \after 8 \! <fis fis'>4 <g g'>) |
+	g,4^\markup { "pizz." } b c r4 |
+	r4^\markup { "arco"} \ottava #1 <d' d'>^\markup{ "div."}(\pp <g g'>8 <a a'> <g g'> <e e'>) |
+	\after 4. \< <e, e'>2( \after 8 \! <fis fis'>4 <g g'>) |
 	\mark \default
 	\tempo "poco rit."
 	\time 3/4
 	<g g'>2.~\ppppsub |
-	q8 \ottava #0 r8 r4 r8 g( |
+	q8 \ottava #0 r8 r4 r8 g(^\markup { "unis." } |
 	\tempo "a tempo"
 	f g f4 g |
 	f8 g f4 g) |
@@ -120,7 +120,7 @@ violinOne = \relative {
 	ees4(\ppsub d~ \tuplet 3/2 { 8 c bes)} |
 	\time 4/4
 	c( d c4 \tuplet 3/2 { bes8 aes g } aes g) |
-	\tuplet 3/2 { f( g ees } ees2) g,8(^\markup { \italic "dolce" }\pp aes |
+	\tuplet 3/2 { f( g ees } ees2) g,8(_\markup { \italic "dolce" }\pp aes |
 	\time 3/4
 	bes c des4. ees8) |
 	bes2 g8( aes |

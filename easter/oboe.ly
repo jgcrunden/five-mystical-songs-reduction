@@ -86,7 +86,7 @@ oboe = \relative {
 	\tempo "Largamente"
 	c(\pp d ees |
 	\time 4/4 f8) r r4 r2 |
-	r r4 g,8^\markup { \italic "dolce" }(\pp aes |
+	r r4 g,8(\pp_\markup { \italic "dolce" } aes |
 	\time 3/4 bes c des4. ees8 |
 	bes2 g4\> |
 	\mark \default ees des\!~ des8 r8) |
