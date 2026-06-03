@@ -64,7 +64,7 @@ violinOne = \relative {
 			\tempo "Poco animato"
 			\key e \minor
 			\time 4/4
-			8 
+			8^\markup { "unis." } 
 		}
 		\new Voice {
 			\voiceTwo
@@ -73,7 +73,7 @@ violinOne = \relative {
 		}
 	>>
 	\oneVoice
-	r8 b4^\markup { "pizz."} c\p r4 |
+	r8 b4\p^\markup { "pizz."} c r4 |
 	fis, b c r4 |
 	r4^\markup {"arco"} <dis b'>^\markup { "div."}(\pp <fis d'>8 <g e'> <fis d'> <dis b'>) |
 	\after 4 \< \after 2 \! q2( <e c'>4 <fis d'>) |

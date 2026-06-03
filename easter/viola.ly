@@ -53,10 +53,32 @@ viola = \relative {
 	R2. |
 	r4 r4 <ees, g>4(~\p_\markup { \italic "dolce" }^\markup { "div." } |
 	4 <des f>2) |
-	<ees g>(4 <des f>2) |
+	<ees g>4( <des f>2) |
 	<e g>2\p\dim^\markup { \italic "molto sost." } <e gis cis>4~ |
 	2. |
-	<e g b>2.~ |
+	\after 4 \> \after 2 \ppp <e g b>2.~ |
+	\tempo "Poco animato"
+	\key e \minor
 	\time 4/4
-	8 r8 r4 r4
+	8^\markup { "unis." } r8 b'4\p^\markup { "pizz." } e r |
+	fis, b g r |
+	r4 b(\pp^\markup { "arco" } d8 e d b) |
+	\after 4 \< \after 2 \! b2.( a4) |
+	g~ 8 r r4 b'8(\pp--^\markup { "solo" } a-- |
+	g4) d( e f) |
+	r^\markup { "tutti" } <d g>(\pp^\markup { "div." } <g b>8 <a c> <g b> <e a>) |
+	<<
+		{
+			\voiceOne
+			a4( \after 8 \< e \after 8 \! <b d> e) |
+			\time 3/4
+\version "2.25.35"
+			g,2.~\ppppsub |
+			8 r r4 
+		}
+		\new Voice {
+			\voiceTwo
+		}
+	>>
+	\oneVoice
 }

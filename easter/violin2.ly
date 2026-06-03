@@ -69,7 +69,7 @@ violinTwo = \relative {
 	\tempo "Poco animato"
 	\key e \minor
 	\time 4/4
-	8 r8 g4^\markup { "pizz." } g r4 |
+	8^\markup {"unis." } r8 g4\p^\markup { "pizz." } g r4 |
 	dis4 4 e r4 |
 	r4 fis(\pp^\markup { "arco" } a8 b a fis) |
 	<<
