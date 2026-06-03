@@ -10,7 +10,7 @@ violinOne = \relative {
 	\time 3/4
 	r4 r4 \tuplet 3/2 { c''8(\p-- 8-- 8)-- } |
 	\tuplet 3/2 { 4.:8\< } \tuplet 3/2 { <bes ees>:8^\markup { "div." } } \tuplet 3/2 { q:8 } |
-	<bes bes'>2\!\( <aes aes'>4~ |
+	<bes bes'>2\>\( <aes aes'>4~\pp |
 	q8 <g g'>~ \tuplet 3/2 { <g g'>\) q q } \tuplet 3/2 { q4.:8\< } |
 	\tuplet 3/2 { <d' f>:8\f } \tuplet 3/2 { <g, ees'>:8\> } \tuplet 3/2 { q:8 } |
 	\tuplet 3/2 { <f ees'>8 q <ees ees'> } \tuplet 3/2 { <d bes'> q q } \tuplet 3/2 { q4.:8\p } |
