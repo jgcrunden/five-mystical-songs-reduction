@@ -71,13 +71,28 @@ viola = \relative {
 		{
 			\voiceOne
 			a4( \after 8 \< e \after 8 \! <b d> e) |
+			\mark \default
 			\time 3/4
-\version "2.25.35"
-			g,2.~\ppppsub |
-			8 r r4 
+			<g, g'>2.~\ppppsub |
+			8 r r4 r8 g'(\pp |
+			bes g f4 g) |
+			bes8( g f4 g) |
+			<a, d>2( f'4) |
+			<c e>4\pp \tuplet 3/2 { g8( c e } d e) |
+			f4( g2) |
 		}
 		\new Voice {
 			\voiceTwo
+			e4( a, fis g) |
+			\time 3/4
+			<d d'>2.~ |
+			8 s s4 s8 bes'( |
+			d b! a4 b) |
+			d8( b! a4 b) |
+			f2( <f d'>4) |
+			<c g'> \tuplet 3/2 { <e c'>8( <g e'> <c g'> } bes' g) |
+			d4( e2)
+
 		}
 	>>
 	\oneVoice
