@@ -1,5 +1,7 @@
 \version "2.25.35"
 
+\include "common.ly"
+
 \include "oboe.ly"
 \include "flute.ly"
 \include "clarinet.ly"
@@ -20,6 +22,8 @@
 \include "violin2.ly"
 \include "viola.ly"
 
+
+
 easter = \score {
 	\header {
 		title = "Easter"
@@ -32,7 +36,7 @@ easter = \score {
 			\new Staff = "flute" {
 				\set Staff.instrumentName = "Flute"
 				\set Staff.shortInstrumentName = "Fl."
-				\flute
+				<< \globals \flute >>
 			}
 			\new Staff = "oboe" {
 				\set Staff.instrumentName = "Oboe"

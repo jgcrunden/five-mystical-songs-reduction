@@ -2,11 +2,6 @@
 
 \include "common.ly" 
 flute = \relative {
-	\override Hairpin.minimum-length = #8
-	\numericTimeSignature
-	\tempo "Maestoso" 4 = 52
-	\key ees \major
-	\time 3/4
 
 	R2. |
 	r4 r ees''\p\<( |
@@ -15,7 +10,7 @@ flute = \relative {
 	f'4(\f ees~ ees8) r |
 	c\> bes bes2\! |
 	R2.*4 |
-	\mark \default \after 4 \> bes2\f  aes8 g\! |
+	\after 4 \> bes2\f  aes8 g\! |
 	aes bes g4. f8 |
 	\after 4. \> ees2.~ |
 	\time 4/4 ees8\! r8 r4 r2 |
@@ -59,13 +54,11 @@ flute = \relative {
 	\mark \default
 	R2. |
 	r4 r r8 g(\pp |
-	\tempo "a tempo" \tuplet 3/2 { bes8 f g } \tuplet 3/2 { f c f } \tuplet 3/2 { g d g } |
+	\tuplet 3/2 { bes8 f g } \tuplet 3/2 { f c f } \tuplet 3/2 { g d g } |
 	\tuplet 3/2 { bes f g } \tuplet 3/2 { f c f } \tuplet 3/2 { g d g) } |
 	\tuplet 3/2 { d( a d } \tuplet 3/2 { a d a } \tuplet 3/2 { d f d } |
 	g4) r8 g( \tuplet 3/2 { bes f g } |
 	\tuplet 3/2 { f d f } \tuplet 3/2 { g e g } \tuplet 3/2 { e g e } |
-	\time 4/4
-	\tempo "poco allargando"
 	\tuplet 3/2 { g\pp \cresc ees g } \tuplet 3/2 { ees g ees } \tuplet 3/2 { g d g } \tuplet 3/2 { d g d\!) } |
 	\tempo "Tempo alla prima"
 	\key ees \major
