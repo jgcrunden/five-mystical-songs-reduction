@@ -41,17 +41,17 @@ easter = \score {
 			\new Staff = "oboe" {
 				\set Staff.instrumentName = "Oboe"
 				\set Staff.shortInstrumentName = "Ob."
-				\oboe
+				<< \globals \oboe >>
 			}
 			\new Staff = "clarinet" {
 				\set Staff.instrumentName = "Clarinet"
 				\set Staff.shortInstrumentName = "Cl."
-				\transpose bes c' { \clarinet }
+				\transpose bes c' { << \globals \clarinet >> }
 			}
 			\new Staff = "basson" {
 				\set Staff.instrumentName = "Basson"
 				\set Staff.shortInstrumentName = "Bn."
-				\basson
+				<< \globals \basson >>
 			}
 		>>
 		\new StaffGroup = "brass" 
@@ -59,7 +59,14 @@ easter = \score {
 			\new Staff = "horn" {
 				\set Staff.instrumentName = "Horn"
 				\set Staff.shortInstrumentName = "Hn."
-				\horn
+				\transpose f c' {
+					<< 
+						%%\omit Staff.KeySignature
+						%%\omit Staff.KeyCancellation
+						\globals
+						\horn
+					>>
+				}
 			}
 			\new Staff = "trumpet" {
 				\set Staff.instrumentName = "Trumpet"
@@ -71,14 +78,14 @@ easter = \score {
 			\new Staff = "timpani" {
 				\set Staff.instrumentName = "Timpani"
 				\set Staff.shortInstrumentName = "Timp."
-				\timpani
+				<< \globals \timpani >>
 			}
 		\new StaffGroup = "soloist" 
 		<<
 			\new Staff = "baritone" {
 				\set Staff.instrumentName = "Baritone"
 				\set Staff.shortInstrumentName = "Bar."
-				\baritoneMusic
+				<< \globals \baritoneMusic >>
 			}
 			\baritoneLyrics
 		>>
@@ -87,25 +94,25 @@ easter = \score {
 			\new Staff = "sopranos" {
 				\set Staff.instrumentName = "Sopranos"
 				\set Staff.shortInstrumentName = "S."
-				\sopranosMusic
+				<< \globals \sopranosMusic >>
 			}
 			\sopranosLyrics
 			\new Staff = "altos" {
 				\set Staff.instrumentName = "Altos"
 				\set Staff.shortInstrumentName = "A."
-				\altosMusic
+				<< \globals \altosMusic >>
 			}
 			\altosLyrics
 			\new Staff = "tenors" {
 				\set Staff.instrumentName = "Tenors"
 				\set Staff.shortInstrumentName = "T."
-				\tenorsMusic
+				<< \globals \tenorsMusic >>
 			}
 			\tenorsLyrics
 			\new Staff = "basses" {
 				\set Staff.instrumentName = "Basses"
 				\set Staff.shortInstrumentName = "B."
-				\bassesMusic
+				<< \globals \bassesMusic >>
 			}
 			\bassesLyrics
 		>>
@@ -117,17 +124,17 @@ easter = \score {
 			\new Staff = "violin1" {
 				\set Staff.instrumentName = "Violin I"
 				\set Staff.shortInstrumentName = "Vln I"
-				\violinOne
+				<< \globals \violinOne >>
 			}
 			\new Staff = "violin2" {
 				\set Staff.instrumentName = "Violin II"
 				\set Staff.shortInstrumentName = "Vln II"
-				\violinTwo
+				<< \globals \violinTwo >>
 			}
 			\new Staff = "viola" {
 				\set Staff.instrumentName = "Viola"
 				\set Staff.shortInstrumentName = "Vla."
-				\viola
+				<< \globals \viola >>
 			}
 		>>
 	>>

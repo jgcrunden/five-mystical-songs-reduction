@@ -1,83 +1,82 @@
 \version "2.25.35"
 
 clarinet = \relative {
-	\transposition bes
-	c''2.\p |
-	bes2(\< a4~ |
-	a2\>~ \tuplet 3/2 { a8\p g f } |
-	g f~ 2) |
-	a'2.(\f |
-	g8\> f e2\!) |
-	r4 c4.(\p d8 |
-	d2) c8( d |
-	ees4. d8 c4~ |
-	4 bes2 |
-	a4) r4 r |
-	e'8(\f d d4 e |
-	f8) r8 r4 r4 |
-	r4 r8 a,(\pp bes c d8. e16 |
-	d4) r4 r a\p |
-	\tuplet 3/2 { c8 c c } \tuplet 3/2 { c4.:8\< } \tuplet 3/2 { c:8 } |
-	\tuplet 3/2 { b:8 } \tuplet 3/2 { b:8 } \tuplet 3/2 { c:8 } |
-	\after 4 \> c2(~\f c8\! b |
-	\after 4 \> c2.)\pp |
-	\tuplet 3/2 { a4.:8 \! } \tuplet 3/2 { a:8 } \tuplet 3/2 { a:8 } |
-	\tuplet 3/2 { r8 dis,(\pp fis } \tuplet 3/2 { a dis fis } \tuplet 3/2 { a b c } |
-	b fis dis b \tuplet 3/2 { a) r8 r8 } |
-	R2.*4 |
-	\tuplet 3/2 { f'4.:8\p \cresc } \tuplet 3/2 { f:8 } \tuplet 3/2 { e:8 } |
-	\tuplet 3/2 { f:8 } \tuplet 3/2 { f:8 } \tuplet 3/2 { e:8 } |
-	f8\f 4 4 8~ |
-	f8 \after 8 \< 4 4 8 |
-	d2.(\ff |
-	\after 4 \> \after 2 \! c) |
-	a2\p r8 a(\pp |
-	bes c a2~ |
-	a8) r8 r4 r |
-	a'2.\p( |
-	g4 f e8 d |
-	c d c bes a) r8 |
-	r4 bes,16(\pp ees g bes) r4 |
-	r4 bes,16( ees g bes r4) |
-	r16 a,( c f) r4 \tuplet 3/2 { bes,8( ees ges } |
-	\tuplet 3/2 { bes ees ges } \tuplet 3/2 { bes ges ees } \tuplet 3/2 { bes ges ees } |
-	\tuplet 3/2 { cis fis a } \tuplet 3/2 { cis\> a fis } \tuplet 3/2 { cis a gis } |
-	fis8\!) r8 a'4(\p 4. b8) |
-	r4 gis(\pp a4. b8) |
-	R1*2 |
-	r4 \tuplet 3/2 { a4.:8\pp } \tuplet 3/2 { b:8 } \tuplet 3/2 { cis:8 } |
-	a4~ \tuplet 3/2 { a8 a a } \tuplet 3/2 { b4.:8 } cis8( b |
-	a4~ 8) r8 r2 |
-	r4 \after 8 \> b4(\pp \after 8 \! cis dis8 cis) |
-	c4~\ppp 8 r8 a,8( b |
-	c e a b c e |
-	g e d4 e |
-	g8 e d4 e) |
-	R2.*2 |
-	r4 r4 \tuplet 3/2 { d8( fis d } \time 4/4 \tuplet 3/2 { f8 d f } \tuplet 3/2 { d f d } \tuplet 3/2 { e c e } \tuplet 3/2 { c e c) } |
-	\tuplet 3/2 { a(\mf \cresc d a } \tuplet 3/2 { d a d } \tuplet 3/2 { a d a } |
-	\tuplet 3/2 { d bes d } \tuplet 3/2 {bes\< d bes } \tuplet 3/2 { d bes d) } |
-	
-	r4 \after 4 \p a2(\ff \>~ |
-	\tuplet 3/2 { a8 g f } g4. f8) |
-	a2(\pp g8 f e2.~ |
-	8) r8 r4 c'8( d |
-	d2. |
-	\tuplet 3/2 { bes8 a bes } g4 f~ |
-	8) r8 r4 r4 |
-	r4 r4 g,(\p a8 bes d f a g |
-	g4 f~ 8) r8 |
-	R2. |
-	\tuplet 3/2 { aes,8(\p\< c f } \tuplet 3/2 { aes c f } \tuplet 3/2 { ees\> bes g } |
-	f\!) r8 r4 r |
-	g'2(\pp f4 |
-	d8 e d2 c4~ |
-	8 bes a2~ 8) r8 |
-	r4 bes,16(\pp ees g bes \tuplet 3/2 { ees8 bes g } |
-	f) r8 r4 a8( bes |
-	c8 d ees4. f8 |
-	c) r8 r4 r4 |
-	R2.*4 |
-	R2. |
-	
+    \transposition bes
+    bes'2.\p |
+    aes2(\< g4~ |
+    g2\>~ \tuplet 3/2 { g8\p f ees } |
+    f ees~ 2) |
+    g'2.(\f |
+    f8\> ees d2\!) |
+    r4 bes4.(\p c8 |
+    c2) bes8( c |
+    des4. c8 bes4~ |
+    4 aes2 |
+    g4) r4 r |
+    d'8(\f c8 4 d |
+    ees8) r8 r4 r4 |
+    r4 r8 g,(\pp aes bes c8. d16 |
+    c4) r4 r g\p |
+    \tuplet 3/2 { bes8 8 8 } \tuplet 3/2 { bes4.:8\< } \tuplet 3/2 { bes:8 } |
+    \tuplet 3/2 { a:8 } \tuplet 3/2 { a:8 } \tuplet 3/2 { bes:8 } |
+    \after 4 \> bes2(~\f bes8\! a |
+    \after 4 \> bes2.)\pp |
+    \tuplet 3/2 { g4.:8 \! } \tuplet 3/2 { g:8 } \tuplet 3/2 { g:8 } |
+    \tuplet 3/2 { r8 c,(\pp e } \tuplet 3/2 { g cis e } \tuplet 3/2 { g a bes } |
+    a e cis a \tuplet 3/2 { g) r8 r8 } |
+    R2.*4 |
+    \tuplet 3/2 { e'4.:8\p \cresc } \tuplet 3/2 { e:8 } \tuplet 3/2 { d:8 } |
+    \tuplet 3/2 { e:8 } \tuplet 3/2 { e:8 } \tuplet 3/2 { d:8 } |
+    e8\f 4 4 8~ |
+    e8 \after 8 \< 4 4 8 |
+    c2.(\ff |
+    \after 4 \> \after 2 \! bes) |
+    g2\p r8 g(\pp |
+    aes bes g2~ |
+    g8) r8 r4 r |
+    g'2.\p( |
+    f4 ees d8 c |
+    bes c bes aes g) r8 |
+    r4 aes,16(\pp des f aes) r4 |
+    r4 aes,16( des f aes r4) |
+    r16 g,( bes ees) r4 \tuplet 3/2 { aes,8( des fes } |
+    \tuplet 3/2 { aes des fes } \tuplet 3/2 { aes fes des } \tuplet 3/2 { aes fes des } |
+    \tuplet 3/2 { b e g } \tuplet 3/2 { b\> g e } \tuplet 3/2 { b g fis } |
+    e8\!) r8 g'4(\p 4. a8) |
+    r4 fis(\pp g4. a8) |
+    R1*2 |
+    r4 \tuplet 3/2 { g4.:8\pp } \tuplet 3/2 { a:8 } \tuplet 3/2 { b:8 } |
+    g4~ \tuplet 3/2 { g8 8 8 } \tuplet 3/2 { a4.:8 } b8( a |
+    g4~ 8) r8 r2 |
+    r4 \after 8 \> a4(\pp \after 8 \! b cis8 b) |
+    bes4~\ppp 8 r8 g,8( a |
+    bes d g a bes d |
+    f d c4 d |
+    f8 d c4 d) |
+    R2.*2 |
+    r4 r4 \tuplet 3/2 { c8( e c } \tuplet 3/2 { ees8 c ees } \tuplet 3/2 { c ees c } \tuplet 3/2 { d bes d } \tuplet 3/2 { bes d bes) } |
+    \tuplet 3/2 { g(\mf \cresc c g } \tuplet 3/2 { c g c } \tuplet 3/2 { g c g } |
+    \tuplet 3/2 { c aes c } \tuplet 3/2 {aes\< c aes } \tuplet 3/2 { c aes c) } |
+    
+    r4 \after 4 \p g2(\ff \>~ |
+    \tuplet 3/2 { g8 f ees } f4. ees8) |
+    g2(\pp f8 ees d2.~ |
+    8) r8 r4 bes'8( c |
+    c2. |
+    \tuplet 3/2 { aes8 g aes } f4 ees~ |
+    8) r8 r4 r4 |
+    r4 r4 f,(\p g8 aes c ees g f |
+    f4 ees~ 8) r8 |
+    R2. |
+    \tuplet 3/2 { ges,8(\p\< bes ees } \tuplet 3/2 { ges bes ees } \tuplet 3/2 { des\> aes f } |
+    ees\!) r8 r4 r |
+    f'2(\pp ees4 |
+    c8 d c2 bes4~ |
+    8 aes g2~ 8) r8 |
+    r4 aes,16(\pp des f aes \tuplet 3/2 { des8 aes f } |
+    ees) r8 r4 g8( aes |
+    bes8 c des4. ees8 |
+    bes) r8 r4 r4 |
+    R2.*4 |
+    R2. |
 }
