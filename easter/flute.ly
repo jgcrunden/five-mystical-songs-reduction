@@ -69,5 +69,5 @@ flute = \relative {
 	R2.*2 |
 	g4.(\ppp \dim a8 bes4~ |
 	bes2 aes4 |
-	g2.\fermata)\pppp \bar "|."
+	g2.\fermata)\pppp |
 }
