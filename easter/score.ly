@@ -46,7 +46,7 @@ easter = \score {
 			\new Staff = "clarinet" {
 				\set Staff.instrumentName = "Clarinet"
 				\set Staff.shortInstrumentName = "Cl."
-				\clarinet
+				\transpose bes c' { \clarinet }
 			}
 			\new Staff = "basson" {
 				\set Staff.instrumentName = "Basson"
