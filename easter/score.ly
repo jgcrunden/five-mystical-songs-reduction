@@ -22,8 +22,6 @@
 \include "violin2.ly"
 \include "viola.ly"
 
-
-
 easter = \score {
 	\header {
 		title = "Easter"
@@ -143,6 +141,11 @@ easter = \score {
 
 	\layout {
 		\override Hairpin.minimum-length = #8
+		#(layout-set-staff-size 16)
+		\context {
+			\Staff
+			\RemoveEmptyStaves
+		}
 	}
 	\midi {}
 }

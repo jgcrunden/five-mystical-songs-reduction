@@ -3,6 +3,8 @@
 \include "common.ly"
 
 viola = \relative {
+	\override Hairpin.minimum-length = #8
+	\clef "alto"
 	r4 r4 \tuplet 3/2 { c'8\p-- 8-- 8-- } |
 	\tuplet 3/2 { 4.:8\< } \tuplet 3/2 { <bes ees>:8 } \tuplet 3/2 { 4.:8 } | 
 	\tuplet 3/2 { <c ees>:8\> } \tuplet 3/2 { 4.:8 } \tuplet 3/2 { g'8(\pp-- f-- ees--)} |
@@ -64,6 +66,7 @@ viola = \relative {
 			<a, d>2( f'4) |
 			<c e>4\pp \tuplet 3/2 { g8( c e } d e) |
 			f4( g2) |
+			<c, aes'>(\p\cresc <d bes'>) |
 		}
 		\new Voice {
 			\voiceTwo
@@ -75,9 +78,52 @@ viola = \relative {
 			f2( <f d'>4) |
 			<c g'> \tuplet 3/2 { <e c'>8( <g e'> <c g'> } bes' g) |
 			d4( e2)
+			<aes, g'>( <bes g'>) |
 
 		}
 	>>
 	\oneVoice
-	
-}
+	\tuplet 3/2 { <ees c'>8(\mf\cresc <c g'> <ees c'> } \tuplet 3/2 { <c g'> <ees c'> <c g'> } \tuplet 3/2 { <ees c'> <c g'> <ees c'>) }
+	\tuplet 3/2 { <c g'>( <ees c'> <c g'> } \tuplet 3/2 { <ees c'>8\< <c g'> <ees c'> } \tuplet 3/2 { <c g'> <ees c'> <c g'>) } |
+	\tuplet 3/2 { <g' ees'>\ff 8 8 }  \tuplet 3/2 { 4.:8\> } \tuplet 3/2 { <ees c'>4.:8\p\> } |
+	\tuplet 3/2 { g8(\pp^\markup { "unis." } f ees)} \tuplet 3/2 { <g, f'>4.:8 } <g f'>8(-- <g ees'>)-- |
+	\tuplet 3/2 { <g f'>4.:8 } \tuplet 3/2 { <g ees'>4.:8 } \tuplet 3/2 { c8 8 8 } |
+	\tuplet 3/2 { <bes d>4.:8 } \tuplet 3/2 { 4.:8 } \tuplet 3/2 { 4.:8 } |
+	\tuplet 3/2 { 4.:8\pp } \tuplet 3/2 { bes:8 } bes8( c) |
+	\tuplet 3/2 { c4.:8 } \tuplet 3/2 { ees:8 } \tuplet 3/2 { c:8 } |
+	\tuplet 3/2 { des:8 } \tuplet 3/2 { aes':8 } \tuplet 3/2 { g:8 } |
+	\tuplet 3/2 { c,:8 } \tuplet 3/2 { g':8 } \tuplet 3/2 { g:8 } |
+	\tuplet 3/2 { g:8 } \tuplet 3/2 { f:8 } \tuplet 3/2 { f:8 } |
+	ees2(~ 8 d) |
+	d4( bes2) |
+	f'4( ees2~ |
+	2 des4 |
+	<g, ees'>8) 4\mp\< 4 8 |
+	\tuplet 3/2 { c,8(\pp_\markup { \italic "subito"} f aes} \tuplet 3/2 { d f aes } g ees) |
+	d( ees d4 d8 f ees d |
+	bes aes) \tuplet 3/2 { <g g'>4.:8 } \tuplet 3/2 { 4.:8 } <ees g>4(~ |
+	4 <des f>2^\markup { "div." }) |
+	<ees g>2.~ |
+	4( <des f>2) |
+	<ees g>4( <des f>2) |
+	<ees g>2\pp\dim^\markup { \italic "molto sost." }
+	<<
+		{
+			\voiceOne
+			<e cis'>4~ |
+			4 <g e'>2 |
+			<g ees'!>\ppp\dim des'4~ |
+			4 2 |
+			<bes ees>2.\pppp\fermata |
+		}
+		\new Voice {
+			\voiceTwo
+			gis4~ |
+			4 e2 |
+			<c c'> <des bes'>4~ |
+			4 2 |
+			<ees ges>2.\fermata |
+		}
+	>>
+
+}	
