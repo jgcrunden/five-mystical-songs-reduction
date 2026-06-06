@@ -3,7 +3,6 @@
 \include "common.ly"
 
 viola = \relative {
-	\override Hairpin.minimum-length = #8
 	\clef "alto"
 	r4 r4 \tuplet 3/2 { c'8\p-- 8-- 8-- } |
 	\tuplet 3/2 { 4.:8\< } \tuplet 3/2 { <bes ees>:8 } \tuplet 3/2 { 4.:8 } | 

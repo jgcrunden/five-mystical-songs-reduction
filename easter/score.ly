@@ -21,6 +21,7 @@
 \include "violin1.ly"
 \include "violin2.ly"
 \include "viola.ly"
+\include "cello.ly"
 
 easter = \score {
 	\header {
@@ -135,6 +136,11 @@ easter = \score {
 				\set Staff.instrumentName = "Viola"
 				\set Staff.shortInstrumentName = "Vla."
 				<< \globals \viola >>
+			}
+			\new Staff = "cello" {
+				\set Staff.instrumentName = "Cello"
+				\set Staff.shortInstrumentName = "Vcs."
+				<< \globals \cello >>
 			}
 		>>
 	>>
