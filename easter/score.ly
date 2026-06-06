@@ -56,13 +56,13 @@ easter = \score {
 		>>
 		\new StaffGroup = "brass" 
 		<<
-			\new Staff = "horn" {
+			\new Staff = "horn" \with {
+				\remove "Key_engraver"
+			} {
 				\set Staff.instrumentName = "Horn"
 				\set Staff.shortInstrumentName = "Hn."
 				\transpose f c' {
 					<< 
-						%%\omit Staff.KeySignature
-						%%\omit Staff.KeyCancellation
 						\globals
 						\horn
 					>>
@@ -71,7 +71,7 @@ easter = \score {
 			\new Staff = "trumpet" {
 				\set Staff.instrumentName = "Trumpet"
 				\set Staff.shortInstrumentName = "Tpt."
-				\trumpet
+				<< \globals \trumpet >>
 			}
 		>>
 		\new StaffGroup = "percussion" 
