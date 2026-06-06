@@ -71,7 +71,9 @@ easter = \score {
 			\new Staff = "trumpet" {
 				\set Staff.instrumentName = "Trumpet"
 				\set Staff.shortInstrumentName = "Tpt."
-				<< \globals \trumpet >>
+				\transpose bes c' {
+					<< \globals \trumpet >>
+				}
 			}
 		>>
 		\new StaffGroup = "percussion" 

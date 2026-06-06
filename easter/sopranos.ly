@@ -4,7 +4,7 @@
  
 sopranosMusic = \new Voice = "sopranos" {
 	\relative {
-		f2.
+		R2.
 		R2.*2 |
 		r4 r bes'\mf\< |
 		f'(\f \after 4 \> ees4.) g,8 |
