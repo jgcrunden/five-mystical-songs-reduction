@@ -141,6 +141,8 @@ easter = \score {
 		>>
 	>>
 
-	\layout {}
+	\layout {
+		\override Hairpin.minimum-length = #8
+	}
 	\midi {}
 }

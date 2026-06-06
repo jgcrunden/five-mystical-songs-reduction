@@ -1,5 +1,4 @@
 globals = {
-	\override Hairpin.minimum-length = #8
 	\numericTimeSignature
 	\tempo "Maestoso" 4 = 52
 	\key ees \major
