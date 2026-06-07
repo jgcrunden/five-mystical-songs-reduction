@@ -22,13 +22,13 @@ cello = \relative {
         }
     >>
     \oneVoice
-    bes'8\>--^\markup { "unis." } aes f4.(\< g8) |
+    bes'8\>--^\markup { "unis." } aes-- f4.(\< g8) |
     aes2(\p g4~ |
     4 g' f |
     ees2.) |
     2. |
     d4\< c2\f\> |
-    bes8\(( aes) f4( g)\) |
+    bes8\((\! aes) f4( g)\) |
     \after 4. \> aes4.( bes8 c4) |
     d\p\> ees2(\pp d4) |
     <<
@@ -172,8 +172,8 @@ cello = \relative {
             c2( bes4) |
             aes2. |
             g |
-            des' |
-            ces2( des4) |
+            des'( |
+            ces2 des4) |
             ees2( d!4) |
             c2( bes4) |
         }
@@ -185,7 +185,7 @@ cello = \relative {
     bes4(\< d\> c) |
     bes4(\! aes2) |
     bes4( aes2) |
-    bes2\pp\dim^\markup { "molto sost." } 
+    bes2\pp\dim^\markup { \italic "molto sost." } 
     <<
         {
             \voiceOne
@@ -204,10 +204,4 @@ cello = \relative {
             <ees bes'> |
         }
     >>
-}
-
-\score { 
-    \new Staff = "cello" {
- 		<< \globals \cello >>
- 	}
 }
